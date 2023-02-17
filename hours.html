@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LTS Hours</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__h1">The Little Taco Shop Hours</h1>
+      <h1 class="header__h1">Little Taco Shop</h1>
       <nav class="header__nav">
         <ul class="header__ul">
           <li><a href="/">Home</a></li>
@@ -29,8 +30,9 @@
 
     <hr />
 
-    <main>
-      <article>
+    <main class="main">
+      <article class="main_article">
+        <h2>Hours</h2>
         <p>We are open 7 days a week</p>
         <dl>
           <dt>Sunday-Thursday</dt>
@@ -38,16 +40,14 @@
           <dt>Friday-Saturday</dt>
           <dd><time datetime="11:00">11am</time>-<time datetime="23:00">11pm</time></dd>
         </dl>
-        <br />
-        <br />
-        <a href="#">Back to Top</a>
       </article>
     </main>
 
-    <hr />
-
-    <footer>
-      <p>Copyright &copy; The Little Taco Shop</p>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time> </span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
     </footer>
   </body>
 </html>
